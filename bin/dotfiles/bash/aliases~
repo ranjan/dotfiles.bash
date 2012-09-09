@@ -1,9 +1,0 @@
-. ~/bin/dotfiles/bash/git_aliases
-. ~/bin/dotfiles/bash/bundler_aliases
-. ~/bin/dotfiles/bash/heroku_aliases
-
-
-alias tu='top -o cpu' # cpu
-alias tm='top -o vsize' # memory
-
-alias g="git status"

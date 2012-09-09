@@ -37,6 +37,7 @@ BBLUE='\e[44m'
 BMAGENTA='\e[45m'
 BCYAN='\e[46m'
 BWHITE='\e[47m'
+ORANGE='\033[33;40m'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
@@ -49,4 +50,6 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/(\1$(parse_git_dirty))/"
 }
 
-PS1="\n\u:\w \[$UBLUE\]\$(parse_git_branch)\[$GREEN\] \n→ "
+export PS1="\[$ORANGE\]\@ \u:\w \[$UBLUE\]\$(parse_git_branch)\[$GREEN\] \n→ "
+
+#export PS1='\[\033[33;40m\]\@ \u@\h: \w$(parse_git_branch)>\[\033[0m\]'
