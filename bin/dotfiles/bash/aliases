@@ -1,8 +1,7 @@
-. ~/bin/dotfiles/bash/git_aliases
-. ~/bin/dotfiles/bash/bundler_aliases
-. ~/bin/dotfiles/bash/heroku_aliases
-. ~/bin/dotfiles/bash/rails_aliases
-
+. ~/.dotfiles.bash/bin/dotfiles/bash/git_aliases
+. ~/.dotfiles.bash/bin/dotfiles/bash/bundler_aliases
+. ~/.dotfiles.bash/bin/dotfiles/bash/heroku_aliases
+. ~/.dotfiles.bash/bin/dotfiles/bash/rails_aliases
 
 
 alias tu='top -o cpu' # cpu
