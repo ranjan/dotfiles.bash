@@ -45,7 +45,7 @@ function heroku-help() {
   echo "  hcon        = heroku console"
   echo "  hnew        = heroku create"
   echo "  hrestart    = heroku restart"
-  echo "  hlog        = heroku logs"
+  echo "  hlog        = heroku logs --tail"
   echo "  hon         = heroku maintenance:on"
   echo "  hoff        = heroku maintenance:off"
   echo "  hc          = heroku config"
