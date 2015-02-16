@@ -9,5 +9,6 @@ dotfiles.bash
 
 * Install
     
-  $ cd dotfiles.bash
+  $ cd dotfiles.bash   
+  
   $ ./setup.sh
