@@ -8,6 +8,6 @@ dotfiles.bash
   $ git clone git@github.com:ranjan/dotfiles.bash.git
 
 * Install
-
+    
   $ cd dotfiles.bash
   $ ./setup.sh
