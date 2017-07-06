@@ -86,5 +86,4 @@ function get_ruby_version {
 
 #export PS1="\[$ORANGE\]\@ \u:\w \[$bldred\]\$(parse_git_branch)\[$GREEN\] \n→ "
 
-export PS1="\[$ORANGE\]\@ \u:\w \[$bldred\]\$(get_ruby_version) \[$undblu\]\$(parse_git_branch)\[$GREEN\] \n→ "
-
+export PS1=" \[$CYAN\]\u@\$(get_hostname):\w  \[$bldred\]\$(get_ruby_version) \[$undblu\]\$(parse_git_branch)\[$GREEN\] \n→ "
