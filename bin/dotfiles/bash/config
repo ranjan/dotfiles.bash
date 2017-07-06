@@ -83,7 +83,8 @@ function get_ruby_version {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/($(ruby -v | cut -c 1-10))/"
 }
 
+function get_hostname {
+  hostname -s
+}
 
-#export PS1="\[$ORANGE\]\@ \u:\w \[$bldred\]\$(parse_git_branch)\[$GREEN\] \n→ "
-
-export PS1=" \[$CYAN\]\u@\$(get_hostname):\w  \[$bldred\]\$(get_ruby_version) \[$undblu\]\$(parse_git_branch)\[$GREEN\] \n→ "
+export PS1=" \[$CYAN\]\u@\$(get_hostname):\w \t \[$bldred\]\$(get_ruby_version) \[$undblu\]\$(parse_git_branch)\[$GREEN\] \n→ "
